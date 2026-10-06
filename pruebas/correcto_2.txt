@@ -1,0 +1,12 @@
+loot CofreHierro {
+    drop PocionCuracion {
+        chance: 40%;
+        min: 3;
+        max: 5;
+    }
+    drop Antorcha {
+        chance: 60%;
+        min: 10;
+        max: 20;
+    }
+}

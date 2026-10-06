@@ -1,0 +1,16 @@
+item EspadaLarga {
+    type: melee;
+    damage: 45;
+    speed: normal;
+}
+
+boss DevoradorDeMundos {
+    health: 5000;
+    defense: 20;
+}
+
+phase Furia {
+    condition: hp < 50%;
+    speed: fast;
+    attack: "ataque_embestida";
+}

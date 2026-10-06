@@ -1,0 +1,4 @@
+boss {
+    health: 10000;
+    defense: 50;
+}

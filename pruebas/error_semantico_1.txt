@@ -1,0 +1,8 @@
+loot BossCofre {
+    drop EspadaLegendaria {
+        chance: 80%;
+    }
+    drop EscudoFuerte {
+        chance: 50%;
+    }
+}

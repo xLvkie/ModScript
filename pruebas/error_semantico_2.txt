@@ -1,0 +1,5 @@
+item BastoMagico {
+    type: magic;
+    damage: "masivo";
+    mana_cost: 15;
+}

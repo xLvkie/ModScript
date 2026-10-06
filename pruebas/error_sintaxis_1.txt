@@ -1,0 +1,5 @@
+item HachaBatalla {
+    type: melee;
+    damage: 20
+    speed: slow;
+}
