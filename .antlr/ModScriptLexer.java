@@ -1,4 +1,4 @@
-// Generated from c:/Trabajos U/Codigos/ModScript/ModScript.g4 by ANTLR 4.13.1
+// Generated from /Users/bookie/ModScript/ModScript.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -16,7 +16,7 @@ public class ModScriptLexer extends Lexer {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, KW_ITEM=2, KW_BOSS=3, KW_PHASE=4, KW_LOOT=5, KW_DROP=6, ID=7, 
+		T__0=1, TK_ITEM=2, TK_BOSS=3, TK_PHASE=4, TK_LOOT=5, TK_DROP=6, ID=7, 
 		NUMBER=8, PERCENTAGE=9, STRING=10, TIME_LITERAL=11, LBRACE=12, RBRACE=13, 
 		SEMI=14, COLON=15, OP_REL=16, WS=17;
 	public static String[] channelNames = {
@@ -29,7 +29,7 @@ public class ModScriptLexer extends Lexer {
 
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"T__0", "KW_ITEM", "KW_BOSS", "KW_PHASE", "KW_LOOT", "KW_DROP", "ID", 
+			"T__0", "TK_ITEM", "TK_BOSS", "TK_PHASE", "TK_LOOT", "TK_DROP", "ID", 
 			"NUMBER", "PERCENTAGE", "STRING", "TIME_LITERAL", "LBRACE", "RBRACE", 
 			"SEMI", "COLON", "OP_REL", "WS"
 		};
@@ -45,7 +45,7 @@ public class ModScriptLexer extends Lexer {
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, null, "KW_ITEM", "KW_BOSS", "KW_PHASE", "KW_LOOT", "KW_DROP", "ID", 
+			null, null, "TK_ITEM", "TK_BOSS", "TK_PHASE", "TK_LOOT", "TK_DROP", "ID", 
 			"NUMBER", "PERCENTAGE", "STRING", "TIME_LITERAL", "LBRACE", "RBRACE", 
 			"SEMI", "COLON", "OP_REL", "WS"
 		};

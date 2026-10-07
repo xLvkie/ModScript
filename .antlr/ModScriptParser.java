@@ -1,4 +1,4 @@
-// Generated from c:/Trabajos U/Codigos/ModScript/ModScript.g4 by ANTLR 4.13.1
+// Generated from /Users/bookie/ModScript/ModScript.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -16,7 +16,7 @@ public class ModScriptParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, KW_ITEM=2, KW_BOSS=3, KW_PHASE=4, KW_LOOT=5, KW_DROP=6, ID=7, 
+		T__0=1, TK_ITEM=2, TK_BOSS=3, TK_PHASE=4, TK_LOOT=5, TK_DROP=6, ID=7, 
 		NUMBER=8, PERCENTAGE=9, STRING=10, TIME_LITERAL=11, LBRACE=12, RBRACE=13, 
 		SEMI=14, COLON=15, OP_REL=16, WS=17;
 	public static final int
@@ -40,7 +40,7 @@ public class ModScriptParser extends Parser {
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, null, "KW_ITEM", "KW_BOSS", "KW_PHASE", "KW_LOOT", "KW_DROP", "ID", 
+			null, null, "TK_ITEM", "TK_BOSS", "TK_PHASE", "TK_LOOT", "TK_DROP", "ID", 
 			"NUMBER", "PERCENTAGE", "STRING", "TIME_LITERAL", "LBRACE", "RBRACE", 
 			"SEMI", "COLON", "OP_REL", "WS"
 		};
@@ -171,22 +171,22 @@ public class ModScriptParser extends Parser {
 			setState(32);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case KW_ITEM:
+			case TK_ITEM:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(29);
 				itemDecl();
 				}
 				break;
-			case KW_BOSS:
-			case KW_PHASE:
+			case TK_BOSS:
+			case TK_PHASE:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(30);
 				bossDecl();
 				}
 				break;
-			case KW_LOOT:
+			case TK_LOOT:
 				enterOuterAlt(_localctx, 3);
 				{
 				setState(31);
@@ -210,7 +210,7 @@ public class ModScriptParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class ItemDeclContext extends ParserRuleContext {
-		public TerminalNode KW_ITEM() { return getToken(ModScriptParser.KW_ITEM, 0); }
+		public TerminalNode TK_ITEM() { return getToken(ModScriptParser.TK_ITEM, 0); }
 		public TerminalNode ID() { return getToken(ModScriptParser.ID, 0); }
 		public TerminalNode LBRACE() { return getToken(ModScriptParser.LBRACE, 0); }
 		public AttrListContext attrList() {
@@ -230,7 +230,7 @@ public class ModScriptParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(34);
-			match(KW_ITEM);
+			match(TK_ITEM);
 			setState(35);
 			match(ID);
 			setState(36);
@@ -254,14 +254,14 @@ public class ModScriptParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class BossDeclContext extends ParserRuleContext {
-		public TerminalNode KW_BOSS() { return getToken(ModScriptParser.KW_BOSS, 0); }
+		public TerminalNode TK_BOSS() { return getToken(ModScriptParser.TK_BOSS, 0); }
 		public TerminalNode ID() { return getToken(ModScriptParser.ID, 0); }
 		public TerminalNode LBRACE() { return getToken(ModScriptParser.LBRACE, 0); }
 		public AttrListContext attrList() {
 			return getRuleContext(AttrListContext.class,0);
 		}
 		public TerminalNode RBRACE() { return getToken(ModScriptParser.RBRACE, 0); }
-		public TerminalNode KW_PHASE() { return getToken(ModScriptParser.KW_PHASE, 0); }
+		public TerminalNode TK_PHASE() { return getToken(ModScriptParser.TK_PHASE, 0); }
 		public BossDeclContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -275,11 +275,11 @@ public class ModScriptParser extends Parser {
 			setState(52);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case KW_BOSS:
+			case TK_BOSS:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(40);
-				match(KW_BOSS);
+				match(TK_BOSS);
 				setState(41);
 				match(ID);
 				setState(42);
@@ -290,11 +290,11 @@ public class ModScriptParser extends Parser {
 				match(RBRACE);
 				}
 				break;
-			case KW_PHASE:
+			case TK_PHASE:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(46);
-				match(KW_PHASE);
+				match(TK_PHASE);
 				setState(47);
 				match(ID);
 				setState(48);
@@ -322,7 +322,7 @@ public class ModScriptParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class LootDeclContext extends ParserRuleContext {
-		public TerminalNode KW_LOOT() { return getToken(ModScriptParser.KW_LOOT, 0); }
+		public TerminalNode TK_LOOT() { return getToken(ModScriptParser.TK_LOOT, 0); }
 		public TerminalNode ID() { return getToken(ModScriptParser.ID, 0); }
 		public TerminalNode LBRACE() { return getToken(ModScriptParser.LBRACE, 0); }
 		public DropListContext dropList() {
@@ -342,7 +342,7 @@ public class ModScriptParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(54);
-			match(KW_LOOT);
+			match(TK_LOOT);
 			setState(55);
 			match(ID);
 			setState(56);
@@ -398,7 +398,7 @@ public class ModScriptParser extends Parser {
 				setState(63); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( _la==KW_DROP );
+			} while ( _la==TK_DROP );
 			}
 		}
 		catch (RecognitionException re) {
@@ -414,7 +414,7 @@ public class ModScriptParser extends Parser {
 
 	@SuppressWarnings("CheckReturnValue")
 	public static class DropDeclContext extends ParserRuleContext {
-		public TerminalNode KW_DROP() { return getToken(ModScriptParser.KW_DROP, 0); }
+		public TerminalNode TK_DROP() { return getToken(ModScriptParser.TK_DROP, 0); }
 		public TerminalNode ID() { return getToken(ModScriptParser.ID, 0); }
 		public TerminalNode LBRACE() { return getToken(ModScriptParser.LBRACE, 0); }
 		public AttrListContext attrList() {
@@ -434,7 +434,7 @@ public class ModScriptParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(65);
-			match(KW_DROP);
+			match(TK_DROP);
 			setState(66);
 			match(ID);
 			setState(67);
@@ -480,15 +480,18 @@ public class ModScriptParser extends Parser {
 		int _la;
 		try {
 			int _alt;
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(71);
-			attr();
-			setState(76);
+			setState(89);
 			_errHandler.sync(this);
-			_alt = getInterpreter().adaptivePredict(_input,4,_ctx);
-			while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
-				if ( _alt==1 ) {
+			switch ( getInterpreter().adaptivePredict(_input,6,_ctx) ) {
+			case 1:
+				enterOuterAlt(_localctx, 1);
+				{
+				setState(71);
+				attr();
+				setState(76);
+				_errHandler.sync(this);
+				_la = _input.LA(1);
+				while (_la==SEMI) {
 					{
 					{
 					setState(72);
@@ -496,22 +499,40 @@ public class ModScriptParser extends Parser {
 					setState(73);
 					attr();
 					}
-					} 
+					}
+					setState(78);
+					_errHandler.sync(this);
+					_la = _input.LA(1);
 				}
-				setState(78);
-				_errHandler.sync(this);
-				_alt = getInterpreter().adaptivePredict(_input,4,_ctx);
-			}
-			setState(80);
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			if (_la==SEMI) {
+				}
+				break;
+			case 2:
+				enterOuterAlt(_localctx, 2);
 				{
 				setState(79);
+				attr();
+				setState(84);
+				_errHandler.sync(this);
+				_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
+				while ( _alt!=2 && _alt!=org.antlr.v4.runtime.atn.ATN.INVALID_ALT_NUMBER ) {
+					if ( _alt==1 ) {
+						{
+						{
+						setState(80);
+						match(SEMI);
+						setState(81);
+						attr();
+						}
+						} 
+					}
+					setState(86);
+					_errHandler.sync(this);
+					_alt = getInterpreter().adaptivePredict(_input,5,_ctx);
+				}
+				setState(87);
 				match(SEMI);
 				}
-			}
-
+				break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -545,28 +566,28 @@ public class ModScriptParser extends Parser {
 		AttrContext _localctx = new AttrContext(_ctx, getState());
 		enterRule(_localctx, 16, RULE_attr);
 		try {
-			setState(88);
+			setState(97);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case ID:
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(82);
+				setState(91);
 				match(ID);
-				setState(83);
+				setState(92);
 				match(COLON);
-				setState(84);
+				setState(93);
 				value();
 				}
 				break;
 			case T__0:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(85);
+				setState(94);
 				match(T__0);
-				setState(86);
+				setState(95);
 				match(COLON);
-				setState(87);
+				setState(96);
 				condition();
 				}
 				break;
@@ -605,7 +626,7 @@ public class ModScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(90);
+			setState(99);
 			_la = _input.LA(1);
 			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 3968L) != 0)) ) {
 			_errHandler.recoverInline(this);
@@ -647,11 +668,11 @@ public class ModScriptParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(92);
+			setState(101);
 			match(ID);
-			setState(93);
+			setState(102);
 			match(OP_REL);
-			setState(94);
+			setState(103);
 			value();
 			}
 		}
@@ -667,7 +688,7 @@ public class ModScriptParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\u0004\u0001\u0011a\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0004\u0001\u0011j\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
 		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0002"+
 		"\u0005\u0007\u0005\u0002\u0006\u0007\u0006\u0002\u0007\u0007\u0007\u0002"+
 		"\b\u0007\b\u0002\t\u0007\t\u0002\n\u0007\n\u0001\u0000\u0004\u0000\u0018"+
@@ -680,46 +701,51 @@ public class ModScriptParser extends Parser {
 		"\u0001\u0005\u0004\u0005>\b\u0005\u000b\u0005\f\u0005?\u0001\u0006\u0001"+
 		"\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0006\u0001\u0007\u0001"+
 		"\u0007\u0001\u0007\u0005\u0007K\b\u0007\n\u0007\f\u0007N\t\u0007\u0001"+
-		"\u0007\u0003\u0007Q\b\u0007\u0001\b\u0001\b\u0001\b\u0001\b\u0001\b\u0001"+
-		"\b\u0003\bY\b\b\u0001\t\u0001\t\u0001\n\u0001\n\u0001\n\u0001\n\u0001"+
-		"\n\u0000\u0000\u000b\u0000\u0002\u0004\u0006\b\n\f\u000e\u0010\u0012\u0014"+
-		"\u0000\u0001\u0001\u0000\u0007\u000b]\u0000\u0017\u0001\u0000\u0000\u0000"+
-		"\u0002 \u0001\u0000\u0000\u0000\u0004\"\u0001\u0000\u0000\u0000\u0006"+
-		"4\u0001\u0000\u0000\u0000\b6\u0001\u0000\u0000\u0000\n=\u0001\u0000\u0000"+
-		"\u0000\fA\u0001\u0000\u0000\u0000\u000eG\u0001\u0000\u0000\u0000\u0010"+
-		"X\u0001\u0000\u0000\u0000\u0012Z\u0001\u0000\u0000\u0000\u0014\\\u0001"+
-		"\u0000\u0000\u0000\u0016\u0018\u0003\u0002\u0001\u0000\u0017\u0016\u0001"+
-		"\u0000\u0000\u0000\u0018\u0019\u0001\u0000\u0000\u0000\u0019\u0017\u0001"+
-		"\u0000\u0000\u0000\u0019\u001a\u0001\u0000\u0000\u0000\u001a\u001b\u0001"+
-		"\u0000\u0000\u0000\u001b\u001c\u0005\u0000\u0000\u0001\u001c\u0001\u0001"+
-		"\u0000\u0000\u0000\u001d!\u0003\u0004\u0002\u0000\u001e!\u0003\u0006\u0003"+
-		"\u0000\u001f!\u0003\b\u0004\u0000 \u001d\u0001\u0000\u0000\u0000 \u001e"+
-		"\u0001\u0000\u0000\u0000 \u001f\u0001\u0000\u0000\u0000!\u0003\u0001\u0000"+
-		"\u0000\u0000\"#\u0005\u0002\u0000\u0000#$\u0005\u0007\u0000\u0000$%\u0005"+
-		"\f\u0000\u0000%&\u0003\u000e\u0007\u0000&\'\u0005\r\u0000\u0000\'\u0005"+
-		"\u0001\u0000\u0000\u0000()\u0005\u0003\u0000\u0000)*\u0005\u0007\u0000"+
-		"\u0000*+\u0005\f\u0000\u0000+,\u0003\u000e\u0007\u0000,-\u0005\r\u0000"+
-		"\u0000-5\u0001\u0000\u0000\u0000./\u0005\u0004\u0000\u0000/0\u0005\u0007"+
-		"\u0000\u000001\u0005\f\u0000\u000012\u0003\u000e\u0007\u000023\u0005\r"+
-		"\u0000\u000035\u0001\u0000\u0000\u00004(\u0001\u0000\u0000\u00004.\u0001"+
-		"\u0000\u0000\u00005\u0007\u0001\u0000\u0000\u000067\u0005\u0005\u0000"+
-		"\u000078\u0005\u0007\u0000\u000089\u0005\f\u0000\u00009:\u0003\n\u0005"+
-		"\u0000:;\u0005\r\u0000\u0000;\t\u0001\u0000\u0000\u0000<>\u0003\f\u0006"+
-		"\u0000=<\u0001\u0000\u0000\u0000>?\u0001\u0000\u0000\u0000?=\u0001\u0000"+
-		"\u0000\u0000?@\u0001\u0000\u0000\u0000@\u000b\u0001\u0000\u0000\u0000"+
-		"AB\u0005\u0006\u0000\u0000BC\u0005\u0007\u0000\u0000CD\u0005\f\u0000\u0000"+
-		"DE\u0003\u000e\u0007\u0000EF\u0005\r\u0000\u0000F\r\u0001\u0000\u0000"+
-		"\u0000GL\u0003\u0010\b\u0000HI\u0005\u000e\u0000\u0000IK\u0003\u0010\b"+
-		"\u0000JH\u0001\u0000\u0000\u0000KN\u0001\u0000\u0000\u0000LJ\u0001\u0000"+
-		"\u0000\u0000LM\u0001\u0000\u0000\u0000MP\u0001\u0000\u0000\u0000NL\u0001"+
-		"\u0000\u0000\u0000OQ\u0005\u000e\u0000\u0000PO\u0001\u0000\u0000\u0000"+
-		"PQ\u0001\u0000\u0000\u0000Q\u000f\u0001\u0000\u0000\u0000RS\u0005\u0007"+
-		"\u0000\u0000ST\u0005\u000f\u0000\u0000TY\u0003\u0012\t\u0000UV\u0005\u0001"+
-		"\u0000\u0000VW\u0005\u000f\u0000\u0000WY\u0003\u0014\n\u0000XR\u0001\u0000"+
-		"\u0000\u0000XU\u0001\u0000\u0000\u0000Y\u0011\u0001\u0000\u0000\u0000"+
-		"Z[\u0007\u0000\u0000\u0000[\u0013\u0001\u0000\u0000\u0000\\]\u0005\u0007"+
-		"\u0000\u0000]^\u0005\u0010\u0000\u0000^_\u0003\u0012\t\u0000_\u0015\u0001"+
-		"\u0000\u0000\u0000\u0007\u0019 4?LPX";
+		"\u0007\u0001\u0007\u0001\u0007\u0005\u0007S\b\u0007\n\u0007\f\u0007V\t"+
+		"\u0007\u0001\u0007\u0001\u0007\u0003\u0007Z\b\u0007\u0001\b\u0001\b\u0001"+
+		"\b\u0001\b\u0001\b\u0001\b\u0003\bb\b\b\u0001\t\u0001\t\u0001\n\u0001"+
+		"\n\u0001\n\u0001\n\u0001\n\u0000\u0000\u000b\u0000\u0002\u0004\u0006\b"+
+		"\n\f\u000e\u0010\u0012\u0014\u0000\u0001\u0001\u0000\u0007\u000bg\u0000"+
+		"\u0017\u0001\u0000\u0000\u0000\u0002 \u0001\u0000\u0000\u0000\u0004\""+
+		"\u0001\u0000\u0000\u0000\u00064\u0001\u0000\u0000\u0000\b6\u0001\u0000"+
+		"\u0000\u0000\n=\u0001\u0000\u0000\u0000\fA\u0001\u0000\u0000\u0000\u000e"+
+		"Y\u0001\u0000\u0000\u0000\u0010a\u0001\u0000\u0000\u0000\u0012c\u0001"+
+		"\u0000\u0000\u0000\u0014e\u0001\u0000\u0000\u0000\u0016\u0018\u0003\u0002"+
+		"\u0001\u0000\u0017\u0016\u0001\u0000\u0000\u0000\u0018\u0019\u0001\u0000"+
+		"\u0000\u0000\u0019\u0017\u0001\u0000\u0000\u0000\u0019\u001a\u0001\u0000"+
+		"\u0000\u0000\u001a\u001b\u0001\u0000\u0000\u0000\u001b\u001c\u0005\u0000"+
+		"\u0000\u0001\u001c\u0001\u0001\u0000\u0000\u0000\u001d!\u0003\u0004\u0002"+
+		"\u0000\u001e!\u0003\u0006\u0003\u0000\u001f!\u0003\b\u0004\u0000 \u001d"+
+		"\u0001\u0000\u0000\u0000 \u001e\u0001\u0000\u0000\u0000 \u001f\u0001\u0000"+
+		"\u0000\u0000!\u0003\u0001\u0000\u0000\u0000\"#\u0005\u0002\u0000\u0000"+
+		"#$\u0005\u0007\u0000\u0000$%\u0005\f\u0000\u0000%&\u0003\u000e\u0007\u0000"+
+		"&\'\u0005\r\u0000\u0000\'\u0005\u0001\u0000\u0000\u0000()\u0005\u0003"+
+		"\u0000\u0000)*\u0005\u0007\u0000\u0000*+\u0005\f\u0000\u0000+,\u0003\u000e"+
+		"\u0007\u0000,-\u0005\r\u0000\u0000-5\u0001\u0000\u0000\u0000./\u0005\u0004"+
+		"\u0000\u0000/0\u0005\u0007\u0000\u000001\u0005\f\u0000\u000012\u0003\u000e"+
+		"\u0007\u000023\u0005\r\u0000\u000035\u0001\u0000\u0000\u00004(\u0001\u0000"+
+		"\u0000\u00004.\u0001\u0000\u0000\u00005\u0007\u0001\u0000\u0000\u0000"+
+		"67\u0005\u0005\u0000\u000078\u0005\u0007\u0000\u000089\u0005\f\u0000\u0000"+
+		"9:\u0003\n\u0005\u0000:;\u0005\r\u0000\u0000;\t\u0001\u0000\u0000\u0000"+
+		"<>\u0003\f\u0006\u0000=<\u0001\u0000\u0000\u0000>?\u0001\u0000\u0000\u0000"+
+		"?=\u0001\u0000\u0000\u0000?@\u0001\u0000\u0000\u0000@\u000b\u0001\u0000"+
+		"\u0000\u0000AB\u0005\u0006\u0000\u0000BC\u0005\u0007\u0000\u0000CD\u0005"+
+		"\f\u0000\u0000DE\u0003\u000e\u0007\u0000EF\u0005\r\u0000\u0000F\r\u0001"+
+		"\u0000\u0000\u0000GL\u0003\u0010\b\u0000HI\u0005\u000e\u0000\u0000IK\u0003"+
+		"\u0010\b\u0000JH\u0001\u0000\u0000\u0000KN\u0001\u0000\u0000\u0000LJ\u0001"+
+		"\u0000\u0000\u0000LM\u0001\u0000\u0000\u0000MZ\u0001\u0000\u0000\u0000"+
+		"NL\u0001\u0000\u0000\u0000OT\u0003\u0010\b\u0000PQ\u0005\u000e\u0000\u0000"+
+		"QS\u0003\u0010\b\u0000RP\u0001\u0000\u0000\u0000SV\u0001\u0000\u0000\u0000"+
+		"TR\u0001\u0000\u0000\u0000TU\u0001\u0000\u0000\u0000UW\u0001\u0000\u0000"+
+		"\u0000VT\u0001\u0000\u0000\u0000WX\u0005\u000e\u0000\u0000XZ\u0001\u0000"+
+		"\u0000\u0000YG\u0001\u0000\u0000\u0000YO\u0001\u0000\u0000\u0000Z\u000f"+
+		"\u0001\u0000\u0000\u0000[\\\u0005\u0007\u0000\u0000\\]\u0005\u000f\u0000"+
+		"\u0000]b\u0003\u0012\t\u0000^_\u0005\u0001\u0000\u0000_`\u0005\u000f\u0000"+
+		"\u0000`b\u0003\u0014\n\u0000a[\u0001\u0000\u0000\u0000a^\u0001\u0000\u0000"+
+		"\u0000b\u0011\u0001\u0000\u0000\u0000cd\u0007\u0000\u0000\u0000d\u0013"+
+		"\u0001\u0000\u0000\u0000ef\u0005\u0007\u0000\u0000fg\u0005\u0010\u0000"+
+		"\u0000gh\u0003\u0012\t\u0000h\u0015\u0001\u0000\u0000\u0000\b\u0019 4"+
+		"?LTYa";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
